@@ -1,0 +1,656 @@
+.group-info-div{
+    height: 92%;
+    width: 100%;
+
+    opacity: 0.90;
+    
+    display: none;
+    background-color: green;
+
+}
+
+#info-div-container{
+    
+   
+    height: 100%;
+  
+    width: 100%;
+ 
+
+    text-align: center;
+    display:block;
+
+
+ 
+    display:none;
+
+}
+
+
+
+#row-one-headings-info {
+    display:flex;
+    width: 80%;
+    text-align: center;
+}
+
+.info-word {
+    font-size: 1em;
+
+    z-index: 2;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+margin-left: 20px;
+margin-right: 20px;
+
+    
+}
+#main-info-container{
+    height: 75%;
+    width: 90%;
+    margin-top: 5%;
+
+
+    display: inline-block;
+    overflow: scroll;
+}
+#info-container {
+
+}
+#meeting-container{
+    display:none;
+
+}
+
+#tasks-container {
+    display:none;
+}
+#group-image-info {
+    height: 10vmax;
+    width: 10vmax;
+    border-radius: 10vmax;
+    background-color: grey;
+    margin-left: 2vmax;
+    
+    overflow:hidden;
+}
+.group-profile-image{
+    object-fit: cover;
+}
+
+#group-info-row-one {
+    display:flex;
+}
+
+#group-stats-info {
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#group-stats-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#group-stats-description {
+    font-weight: italic;
+    padding-top: 2%;
+    width: 300px;
+    white-space: normal;
+    height: 80px;
+    overflow: scroll;
+}
+#btn-btm-row{
+    display: flex;
+}
+.info-btn {
+    border: none;
+
+    width: 10%;
+ 
+    cursor: pointer;
+    display:inline-block;
+    margin-left: 5%;
+
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(206,58,96);
+    color: white;
+}
+
+#group-members{
+    width: 95%;
+ 
+
+    margin-left: 2.5%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+#list-group-members {
+    width: 100%;
+    height: 50%;
+    
+    margin-top: 1%;
+}
+
+
+
+.code-holder {
+    color: lightgrey;
+    font-style: italic;
+}
+
+
+
+/* First sections */
+
+
+
+
+
+#see-members-word {
+
+    cursor:pointer;
+
+}
+
+.list-members-profile-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: grey;
+    overflow: hidden;
+}
+
+#close-info-box {
+    position:absolute;
+    right: 20px;
+    top: 20px;
+}
+.list-member-user-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+
+.info-box-status-container{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 30px;
+}
+
+
+
+#info-box-header-selector {
+    position: relative;
+    background-color: blue;
+    height: 30px;
+    width: 80px;
+    margin-top: 5px;
+    left:0;
+ 
+   
+}
+
+
+
+#slider-container {
+    position: absolute;
+    width: 320px;
+}
+
+
+#list-meetings-container {
+    max-height: 70%;
+    overflow:scroll;
+}
+
+
+#list-tasks-container{
+    max-height: 70%;
+    overflow:scroll;
+}
+
+#add-new-meeting-manually {
+    text-align: left;
+
+}
+
+#add-meeting-plus {
+    cursor: pointer;
+}
+
+#add-new-task-manually {
+    text-align: left;
+}
+
+#add-task-plus{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.create-a-task-contenteditable{
+    color: grey;
+}
+
+
+
+#reset-group-img {
+position: relative;
+left: -120px;
+height: 120px;
+width: 120px;
+cursor: pointer;
+opacity:0;
+}
+#group-profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.group-info-div{
+    height: 92%;
+    width: 100%;
+
+    opacity: 0.90;
+    
+    display: none;
+    background-color: green;
+
+}
+
+#info-div-container{
+
+    height: 600px;
+    width: 800px;
+
+    text-align: center;
+    display:block;
+ 
+    display:none;
+
+}
+
+
+
+.info-word {
+    font-size: 1em;
+    z-index: 2;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
+}
+#main-info-container{
+    height: 600px;
+    width: 700px;
+    margin-top: 50px;
+    /* background-color: indigo; */
+
+
+    display: inline-block;
+    overflow: scroll;
+}
+#info-container {
+
+}
+#meeting-container{
+    display:none;
+
+}
+
+#tasks-container {
+    display:none;
+}
+
+#group-image-info {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: grey;
+    margin-left: 20px;
+    
+    overflow:hidden;
+}
+
+#group-profile-image{
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+
+}
+
+#group-info-row-one {
+    display:flex;
+}
+
+#group-stats-info {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+#group-stats-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    outline: none;
+    padding-bottom: 10px;
+}
+
+#group-stats-description {
+    font-weight: italic;
+    padding-top: 10px;
+    width: 300px;
+    white-space: normal;
+    height: 80px;
+    overflow: scroll;
+    outline: none;
+    text-align: left;
+}
+#btn-btm-row{
+    display: flex;
+}
+
+.info-btn {
+    border: none;
+    position: absolute;
+    bottom: 80px;
+ 
+    cursor: pointer;
+    display:inline-block;
+    margin-left: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    font-size: 21px;
+    width: 100px;
+    height: 45px;
+}
+
+#save-group-info {
+
+    background-color: #64C855;
+
+}
+
+#cancel-group-info {
+    margin-left: 220px;
+    background-color: white;
+    color: #424242;
+}
+
+#leave-group-info {
+    right: 100px;
+    background-color: #F06E64;
+}
+
+
+#group-members{
+    width: 95%;
+ 
+
+    margin-left: 2.5%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+#list-group-members {
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+}
+
+
+
+.code-holder {
+    color: lightgrey;
+    font-style: italic;
+}
+
+
+
+/* First sections */
+
+.list-members-container {
+    display: flex;
+    margin-bottom: 25px;
+    cursor: pointer;
+    
+
+
+}
+
+#see-members-word {
+
+    cursor:pointer;
+    font-size: 1.5em;
+
+}
+
+.list-members-profile-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: grey;
+    overflow: hidden;
+}
+
+#close-info-box {
+    position:absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.list-member-user-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+
+.info-box-status-container{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 30px;
+    border: solid white 3px;
+    position: relative;
+    margin-top: 23px;
+    margin-left: -12px;
+}
+
+
+
+#info-box-header-selector {
+    position: relative;
+    background-color: blue;
+    height: 30px;
+    width: 80px;
+    margin-top: 5px;
+    left:0;
+ 
+   
+}
+
+
+
+#slider-container {
+    position: absolute;
+    width: 320px;
+}
+
+
+#list-meetings-container {
+    max-height: 70%;
+    overflow:scroll;
+}
+
+
+#list-tasks-container{
+    max-height: 70%;
+    overflow:scroll;
+}
+
+#add-new-meeting-manually {
+    text-align: left;
+
+}
+
+#add-meeting-plus {
+    cursor: pointer;
+}
+
+#add-new-task-manually {
+    text-align: left;
+}
+
+#add-task-plus{
+    cursor: pointer;
+}
+
+
+
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.create-a-task-contenteditable{
+    color: grey;
+}
+
+
+#close-commands-view{
+width: 1px;
+height: 1px;
+
+
+    position: fixed;
+    right: 50px;
+
+}
+
+.close-commands-view-share{
+    width: 1px;
+height: 1px;
+
+
+    position: fixed;
+    right: 50px;
+    color: white;
+    background-color:rgba(170,170,170,0.5) ;
+
+    -webkit-box-shadow: 2px 2px 227px 61px rgba(170,170,170,1);
+    -moz-box-shadow: 2px 2px 227px 61px rgba(170,170,170,1);
+    box-shadow: 2px 2px 227px 61px rgba(170,170,170,1);
+}
+
+
+.list-members-text {
+    margin-left: 20px;
+}
+
+.list-members-name-container {
+    font-size: 18px;
+}
+
+.list-members-email {
+    color: #676767;
+    font-size: 15px;
+}
+
+#group-stats-name:focus {
+    background-color: #fafafa;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#group-stats-description:focus  {
+    background-color: #fafafa;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.date-task-input{
+    width: 70px;
+
+}
+
+#add-group-member-container {
+    position: absolute;
+    left: calc(320px + 30%);
+    height: 93px;
+    width: 300px;
+    border: solid lightgrey 0.5px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 3px 31px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 31px -13px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 31px -13px rgba(0,0,0,0.75);
+    display: none ;
+
+}
+
+#enter-new-user-email {
+    margin-top: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+#add-new-member-form {
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+}
+
+#buttons-row-new-member{
+    display: flex;
+    text-align: center;
+}
+.newmembut{
+    display: inline-block;
+    padding: 5px;
+    width: 80px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: hotpink;
+    color: white;
+    cursor: pointer;
+    -webkit-box-shadow: -2px 3px 69px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 69px -24px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 69px -24px rgba(0,0,0,0.75);
+}
+
+.list-members-container:hover{
+    background-color: #f1f1f1;
+    border-radius:5px;
+    padding: 5px;
+ 
+
+ 
+}

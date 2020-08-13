@@ -1,0 +1,591 @@
+<html>
+
+<head>
+    <title> stitch inc.</title>
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/send.css">
+    <link rel="stylesheet" href="css/messages.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/createGroup.css">
+    <link rel="stylesheet" href="css/searchbox.css">
+    <link rel="stylesheet" href="css/addMember.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/infoBox.css">
+    <link rel="stylesheet" href="css/savedFiles.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/infoTask.css">
+    <link rel="stylesheet" href="css/splash.css">
+    <link rel="stylesheet" href="css/myInfo.css">
+    <link rel="stylesheet" href="css/commandsView.css">
+    <link rel="stylesheet" href="css/security.css">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="stylesheet" href="csscal/theme3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73b2d580f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/theme3.css"/>
+    <link rel="stylesheet" href="css/calendar.css"/>
+    <link rel="stylesheet" href="css/drag.css"/>
+    <link rel="stylesheet" href="css/autocomplete.css"/>
+
+    <link rel="stylesheet" href="css/integrate-email.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+ 
+</head>
+
+<body>  
+ 
+    
+    <div id="hole"></div>
+    <div id ="text"> </div>
+    
+
+    <div id="integrate-email-container"> 
+        <div id="integrate-email-info-holder">
+            Allow stitch to integrate with your email. Use stitch to simplify your inbox.
+            Stitch will keep all your authentication data locally not on the cloud so that only, 
+            you, the client, can access it!
+            <br/>
+            <label class="email-int-prov"> Password</label>
+            <br/>
+
+        <input class = "input-email-int" type="password" placeholder="password" id ="email-password-int"> 
+        <br/>
+
+        <label class="email-int-prov"> Provider</label>
+        <br/>
+
+        <input class = "input-email-int" type="text" id = "email-provider" placeholder="i.e. gmail"> 
+        <br/>
+
+        <div id= "email-provider-info"> 
+            Your email provider is the section at the end of your email address, for
+            example godric.gryffindor@gmail@gmail.com has gmail as a provider!
+        </div>
+        <br/>
+
+        <div class="email-int-btn" id="verify-int-email"> 
+            VERIFY
+        </div>
+        <div id="email-verify-counter"> 
+            60
+        </div>
+        
+    </div>
+    <br/>
+
+        <div id= "verify-email">
+            <div id="verify-email-address"> 
+                We have sent YOU an email from YOU, please enter the verification code
+            </div>
+            <br/>
+
+            <input class = "input-email-int" id="verification-code" type="text" placeholder="314159"> 
+            <br/>
+
+            <div id="complete-verification" class="email-int-btn"> 
+                COMPLETE
+            </div>
+        </div> 
+      
+        
+    </div>
+
+
+
+    <div id = "security-div-container"> 
+        <div id="security-fadeout"> 
+            
+        </div>
+        <div id ="security-box"> 
+            <div id = "security-progress"> 
+                <div id= "sd-1"class = "sd"></div> 
+                <div id= "sd-2" class = "sd"></div> 
+                <div id= "sd-3" class = "sd"></div> 
+                
+            </div>
+            <div id="security-desc"> 
+                
+                Security is very important. Amongst a vast array of security protocols we have modularised 
+                our security process so if somehow a hacker obtained a user's credentials they would 
+                be trapped and contained to keep the rest of the company safe!
+                <p> Your data is stored in a database protected by Google's Security System. 
+                    Any calls, conferences, or meetings are  end to end encrypted and run on a peer to
+                    peer system. As they do not pass through a server they are incredibly difficult 
+                    to hack!
+                </p>
+                <br/>
+                <button id="sec-move-forward" class="security-button"> MOVE FORWARD</button>
+            </div>
+            <div id = "group-Id-sec"> 
+                <div id="group-id-desc"> Your organisation's ID is important to keep secure. 
+                    While your organisations data is still protected by several layers, it 
+                    is important to not give away your organisation's ID. 
+                    If this does happen, not to worry! We will let your organisation know, 
+                    and provide a new one. You will have to reconfigure your security!
+                    </div>
+                    <div id= "enter-groupid-sec"> 
+                        PLEASE ENTER YOUR ORGANISATION'S ID BELOW 
+                    </div>
+                    <br/>
+                    <input id ="enter-org-id" placeholder="#5Gtyw832g32gd33ud"> 
+                    <br/>
+                    <button id="submit-org-id" class="security-button"> SUBMIT</button>
+                    <div id ="validating-id">
+                        <div id="sec-val"> 
+                            <div id='sec-val-word'>Validating</div> 
+                            <div id= 'sec-val-gif'>
+                                        <svg id = "loading-gif" version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                                        <circle fill="lightgrey" stroke="none" cx="6" cy="50" r="10">
+                                        <animateTransform 
+                                        attributeName="transform" 
+                                        dur="1s" 
+                                        type="translate" 
+                                        values="0 45 ; 0 -45; 0 45" 
+                                        repeatCount="indefinite" 
+                                        begin="0.1"/>
+                                        </circle>
+                                        <circle fill="lightgrey" stroke="none" cx="76" cy="50" r="10">
+                                        <animateTransform 
+                                        attributeName="transform" 
+                                        dur="1s" 
+                                        type="translate" 
+                                        values="0 30 ; 0 -30; 0 30" 
+                                        repeatCount="indefinite" 
+                                        begin="0.2"/>
+                                        </circle>
+                                        <circle fill="lightgrey" stroke="none" cx="146" cy="50" r="10">
+                                        <animateTransform 
+                                        attributeName="transform" 
+                                        dur="1s" 
+                                        type="translate" 
+                                        values="0 15 ; 0 -15; 0 15" 
+                                        repeatCount="indefinite" 
+                                        begin="0.3"/>
+                                        </circle>
+                                        </svg>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            
+            <div id ="sec-your-id"> 
+                <div id="sec-yourid-pre"> 
+                    Your ID is like your phone number. No one will be able to ever access your account without your
+                    credentials, but people will be able to connect with you on this business platform.
+                    Give your id to partner businesses and whoever else you would like to be able to communciate.
+                    Your ID is your portal to collaborating with other businesses. 
+                </div>
+                <br/> 
+                <br/> 
+                <div id ="sec-user-id"> #dehfdgef3fguf</div>
+                <br/> 
+                <br/> 
+                <div id = "sec-your-id-extra-info"> 
+                    You will also be able to access your ID from your profile!
+                </div>
+                <br/> 
+                <br/> 
+
+                <button id="enter-stitch" class="security-button"> TUTORIAL</button>
+                <button id="enter-stitch-skiptut" class="security-button"> SKIP TUTORIAL</button>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+
+
+ 
+    <div id="loading-splash-screen"> 
+        <!-- <div id="stitch_logo_cover"> </div> -->
+       <img id="stitch_logo" src="stitch_logo.png"> </img>
+        <div id ="company_name">Cascade Labs</div>        
+    </div>
+
+    <div id="login-container">   
+        <div id ="login-signup-navigator"> 
+            <div class = "login-word" id ="login-nav"> Login</div>
+            <div class = "login-word" id = "signup-nav">Sign up </div> 
+            <div id = "slide-bar"> SLIDE</div>
+        </div>  
+        <div id= "login-container-wrapper"> 
+       
+                  
+                <div id="login-holder">
+
+                <label class = "label"> EMAIL ADDRESS</label><br/>
+                <input class = "log-sig-form" type="email"  placeholder="Your Email" id="email-input"> <br/>
+                <label class = "label"> PASSWORD</label> <br/>
+
+                <input class = "log-sig-form"  type="password"placeholder="Your Password" id="password-input">
+            <br/>
+            <button id="login" class ="lgn-btn" onclick="login()"> Login</button>
+            <p ><a >Forgot your password?</a></p>
+        </div>    
+        <div id="signup-holder"> 
+
+       
+            
+
+                <input class = "log-sig-form"  type="text" placeholder="First Name" id="new-first-name-input">                                                    <i class="input-icon uil uil-user"></i>
+            
+                <input class = "log-sig-form"  type="text" placeholder="LastName Name" id="new-last-name-input">
+
+                <input class = "log-sig-form"  type="email"  placeholder="Email" id="new-email-input">
+        
+                <input class = "log-sig-form"  type="password" placeholder="Password" id="new-password-input">                                                    <i class="input-icon uil uil-lock-alt"></i>
+    
+            <button id="login" class="lgn-btn" onclick="signup()"> Sign Up</button>
+        </div> 
+</div>
+</div>
+
+
+<input id= "reset-profile-img" type="file" accept="image/*" onchange="setProfileUrl (event)"> 
+
+
+
+
+
+
+
+
+
+
+<div id= 'caleander-holder'>
+    <div id="close-caleander"> Close</div>
+<div id ="caleandar"> </div>
+</div> 
+
+
+    
+    <!-- Sidebar html -->
+    <div id="main-app">
+        <div id="side-bar-container">
+
+            <div id="search-bar-container">
+                <form>
+                    <input id="sidebar-searchform" placeholder="Command Center" readonly>
+                </form>
+            </div>
+
+            <div id="sidebar-content-holder">
+
+            </div>
+            <div id="my-profile-container">
+                <div id="profile-img"> 
+                    <img id="profile-img-img"> </img>
+                </div>
+                <div id="profile-name-and-status-container"> 
+                <div id="profile-name"><span id="profile-my-name"> </span>
+                    <br>
+                    <span id="profile-my-status"><div id="my-status-circle"> </div> <span id ="status-word-user"></span></span> 
+            
+                <div id="icon-container"> </div>
+                   
+                </div>
+           
+            </div> 
+            </div>
+
+        </div>
+
+
+        <div id="column-2">
+
+
+            <!-- Header -->
+            
+            <div id="header">
+                <div id="header-group-name"></div> 
+
+                <div id="add-group-member"> 
+                    
+                    <button id="add-group-member">
+                         <!-- Add Group Member -->
+                        <div id="add-group-member-icon-hover">
+                        </div>
+                    </button> 
+                    
+                
+                </div>
+            </div>
+
+            <!-- body html -->
+
+            
+            
+                <div id="messages-container"> </div>
+                <div id="drag-and-drop"> 
+                    <div id = "center-box"> Drop your files!</div>
+                </div>
+
+                <div id="find-commands-wrapper"> 
+                    <div id ="close-commands-view">Close</div>
+                <div id="find-commands-container">
+                    
+                </div>
+                <div id="fadeout"> </div>
+            </div>
+            
+                <div id="input-container">
+                   
+
+                        <textarea  id="send-message" type="text" placeholder="Send a message" rows="2"></textarea>
+                  
+                        <div id="input-file-div"><input id="send-file"type="file" id="myfile" name="myfile" 
+                                onchange="onMediaFileSelected(event)">
+                            
+    
+                    
+                   
+                    
+                </div>
+                <div id="icon-attach"> <i class="fa fa-paperclip" aria-hidden="true"></i></div>
+                <div id="search-spacer"></div>
+
+        
+
+
+
+
+         </div>
+         
+      
+
+         <!-- Info div -->
+
+         <div id="info-div-container" >
+       
+            <div id="row-one"> 
+                
+            <div id="close-info-box"> Close</div>
+        </div>
+            <div id="main-info-container"> 
+                <div id="info-container"> 
+                   <div id="group-info-row-one"> 
+                       <div id="group-image-info">
+                        <img id="group-profile-img"></img></div>
+                        <input id= "reset-group-img" type="file" accept="image/*" onchange="setGroupUrl (event)"> 
+                       <div id="group-stats-info"> 
+                           <div contenteditable id="group-stats-name"> Me</div>
+                           <div contenteditable id="group-stats-description">  </div>
+                           
+                       </div>
+                      
+                       
+                   </div>
+                   <div id="group-members"> 
+                    <div id="see-members-word"> Members <span id = "add-member-plus"> PLUS</span></div>
+                    <div id="add-group-member-container"> 
+                        <div id = "enter-new-user-email"> 
+                            <input id="add-new-member-form" type="text" placeholder="severus@slytherin.hog"> 
+                        </div>
+                        <div id="buttons-row-new-member"> 
+                            <div class = "newmembut" id = "reset-new-mem"> 
+                            
+                                CLOSE
+                            </div>
+                            <div class = "newmembut" id = "add-new-member"> 
+                                ADD
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <div id="list-group-members"></div> 
+                </div>
+
+                <div id="btn-btm-row"> 
+                    <button id="save-group-info" class="info-btn">Save</button>
+                    <button id="cancel-group-info" class="info-btn">Cancel</button>
+                    <button id="leave-group-info" class="info-btn">Leave</button>
+                </div>  </div> </div>
+            </div>
+
+            <div id="my-info-div"> 
+                <div id="close-info-box-me"> Close</div>
+               <div id = "my-info-container">
+               <div id="my-info-box-top-row"> 
+                   My shit
+               </div>
+               </div>
+        </div>
+        </div>
+        
+            
+      
+        <!-- Closing the first app section -->
+    
+    <!-- Settings pages -->
+
+    <div id="settings-container">
+        <div id="settings-box">
+
+            <div id="settings-sidebar">
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- search Pages -->
+    <div id="search-container">
+        <div id="search-box">
+            Hello world
+        </div>
+
+    </div>
+
+
+    <!-- Login Page -->
+    
+
+
+            <div id ="search-whole-container"> 
+                <div id="command-center-container"> 
+                    <div id ="command-center-wrapper"> 
+                    <div id ="command-center-top-row"> 
+                    <form> 
+                        <input id="search-form" type="text" placeholder="Search"> 
+                    </form>
+                    <button id="commands-list"> Cmd</button>
+                </div>
+            </div>
+            <div id ="command-center-content"> 
+                
+            </div><div id ="command-center-options"> CREATE</div>
+            
+            <div id="command-center-people-wrapper"> 
+            <div id="command-center-people"> 
+                
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+
+
+
+        
+                <div id="info-fade" class="group-info-div"> </div>
+              
+
+    </div>
+
+    
+
+    <div id="saved-files-container"> 
+       <div id ="my-files-row1">
+           <div id="saved-files-title" > Find saved files here </div>
+           
+           <div id="close-files-box"> Close</div>
+    </div>  
+    <div id ="myfiles-main"> 
+    <div id="load-myfiles"> 
+        
+    </div>       
+    <div id="my-files-previewer"> 
+        <div id="myfile-preview-image"> </div>
+        <div id="myfile-name-holder"> Screen shot dummy filesname hdfqbgo</div>
+        <div id="myfile-stat"> 
+            <div id="myfile-type-size"> 
+                <div id="myfile-type-size-wrapper">
+                <div id="myfiletype"> PNG</div>
+                <div id="myfilesize">107 MB </div>
+            </div>
+        </div> 
+            <div id="myfile-date-created"> Created <span id = "myfile-date-made-date"> 7 July 2020</span></div>
+        </div>
+        
+    </div> 
+</div>
+    </div>
+    <div id = "blocker"> </div>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDi3gDCv_bDhdU8q4tkz7pyrw3SuyNqx_k",
+        authDomain: "chat-app-test-9dd0e.firebaseapp.com",
+        databaseURL: "https://chat-app-test-9dd0e.firebaseio.com",
+        projectId: "chat-app-test-9dd0e",
+        storageBucket: "chat-app-test-9dd0e.appspot.com",
+        messagingSenderId: "146211515700",
+        appId: "1:146211515700:web:d6b9f59e07fd1c29b88961",
+        measurementId: "G-CPML3Z6CGK"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+
+
+
+
+<script src="notifications.js"> </script> 
+
+    <script src="login.js"></script>
+    <script src="functions.js"></script>
+    <script src="processSendMessage.js"></script>
+    <script src="variables.js"> </script>
+    <script src="savedFiles.js"> </script>
+    <script src="renderInfoBox.js"> </script>
+    <script src="eventListeners.js"> </script>
+    <script src="user.js"> </script>
+    <script src="tutorial.js"> </script>
+    <script src="security.js"> </script>
+    <script src="css/style.js"> </script>
+    <script src ="renderMessages.js"></script>
+    <script src ="autocomplete.js"></script>
+
+    <script type="text/javascript" src="js/caleandar.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+
+    <script src="textarea.js"> </script>
+
+    <!-- Experiment features below -->
+
+<script src="vr.js"> </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+#saved-files-container {
+    position:absolute;
+    left:320px;
+    top: 0px;
+    width: 100%;
+    padding-left: 80px;
+    height: 100vh;
+    overflow: scroll;
+    background-color: white;
+    display: none;
+}
+
+.my-file-holder {
+    display: flex;
+  
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 23px;
+
+}
+.my-file-holder:hover {
+   
+
+}
+#my-files-row1 {
+    display:flex;
+}
+#close-files-box{
+    position: fixed;
+    right: 30px;
+}
+
+#load-myfiles{
+    height: 70vh;
+    min-width: 600px;
+    max-width: 600px;
+
+    overflow: scroll;
+}
+#my-files-row1 {
+    height: 20vh;
+
+}
+
+#myfiles-main {
+    display: flex;
+    border: solid green 2px;
+    width: 65vw;
+}
+
+.saved-files-icon{
+    border: solid black 1px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 20px;
+    height: 25px;
+    object-fit: cover;
+
+}
+.type-icon-myfiles{
+    width: 20px;
+    height: 25px;
+    object-fit: cover;
+}
+.file-name-holder{
+    width: 50%;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 4px;
+
+}
+
+.myfile-link{
+    
+    font-size: 0.9em;
+    text-decoration: none;
+    color:black;
+}
+.file-size-holder{
+    width: 80px;
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: grey;
+}
+
+.myfile-type{
+    width: 80px;
+    margin-left: 20px;
+}
+
+.myfiles-send-icon{
+    margin-left: 15px;
+}
+#my-files-previewer{
+    border: solid blue 2px; 
+    text-align: center;
+}
+#myfile-preview-image {
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    border: solid green 2px;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+#myfile-name-holder{
+    text-align: left;
+    margin: 20px;
+}
+
+#myfile-type-size {
+    text-align: center;
+    display: inline-block;
+}
+#myfile-type-size-wrapper {
+    display: flex;
+    color: grey;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+#myfiletype {
+    padding: 0 20px;
+    border-right: solid grey 1px;
+}
+
+#myfilesize {
+    padding: 0 20px;
+}
+
+#myfile-date-created {
+    color: grey;
+    font-size: 0.9em;
+
+}
+
+#myfile-date-made-date {
+    color: black;
+    margin-left: 20px
+   
+}
+
+
+
+
+
+.myfile-previewimg{
+    height: 200px;
+    width: 150px;
+    border: solid green 2px;
+    object-fit: cover;
+}
+
+.myfile-previewifr{
+    height: 200px;
+    width: 150px;
+    border: solid green 2px;
+    
+}

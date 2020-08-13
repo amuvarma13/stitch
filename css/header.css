@@ -1,0 +1,48 @@
+#header{
+    display:flex;
+    padding: 15px;
+    /* **** */
+
+}
+
+#header-group-name {
+    position: relative;
+    font-size: 18px;
+  
+
+}
+
+#add-group-member {
+    /* background-color: blue; */
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+.add-group-member-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+/* 
+.add-group-member-icon:hover {
+    height: 30px;
+    width: 30px;
+    background-color: #f1f1f1;
+} */
+
+#add-group-member-icon-hover:hover {
+    position: relative;
+    right: -5px;
+    top: -5px;
+    /* height: 40px;
+    width: 40px; */
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    cursor: pointer;
+}

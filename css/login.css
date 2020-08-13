@@ -1,0 +1,54 @@
+#signup-holder{
+  display: none;
+}
+
+#login-container-wrapper{
+  border: solid red 1px;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin-top: 5%;
+  left: 25%;
+  text-align: center;
+}
+
+#login-signup-navigator {
+  width: 25%;
+  position: relative;
+  left: 37.5%;
+  margin-top: 5%;
+  border: solid red 1px;
+  display: flex;
+  text-align: center;
+
+}
+
+.log-sig-form{
+  width: 60%;
+  height: 10%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+
+}
+
+#slide-bar {
+  position: absolute;
+  background-color: grey;
+  left: 15%;
+  width: 20%;
+}
+
+.login-word{
+  width: 20%;
+  border: solid green 1px;
+  display: inline-block;
+  margin-left: 15%;
+  margin-right: 15%;
+  cursor: pointer;
+
+
+
+}
+

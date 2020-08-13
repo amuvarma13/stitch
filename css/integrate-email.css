@@ -1,0 +1,26 @@
+#integrate-email-container {
+  
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    z-index: 10;
+    border: solid red 1px;
+    display: block;
+    text-align: center;
+    display: none;
+    }
+
+    .email-int-btn{
+        display: inline-block;
+        border: solid red 1px;
+        width: 100px;
+        margin: 10px;
+        cursor: pointer;
+
+    }
+
+    #email-verify-counter{
+        display: none;
+    }

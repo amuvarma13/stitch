@@ -1,0 +1,145 @@
+#sidebar-content-holder{
+    overflow:scroll;
+    text-align: center;
+
+}
+
+
+.sidebar-holder {
+   
+    height: 90px;
+    width: 297.6px;
+    border-radius: 10px;
+    display: inline-block;
+   position: absolute;
+
+    left:10px;
+    overflow: hidden;
+    background-color: transparent;
+
+
+
+}
+.sidebar-subholder{
+    border-radius: 10px;
+
+    text-overflow: ellipsis;
+}
+
+.sidebar-holder:hover {
+    background-color: #E5E5E5;
+    cursor: pointer;
+
+}
+
+.sidebar-subholder{
+    display:flex;
+    /* background-color: violet; */
+    height: 100%;
+
+}
+
+.sidebar-last-message{
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 0.8em;
+    text-align: left;
+    font-size: 12px;
+}
+
+.side-bar-info-dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    position: relative;
+    top: 35px;
+    left: 13px;
+}
+
+.sidebar-profile-img{
+    height: 50px;
+    width:50px;
+    border-radius: 50px;
+    /* position: relative; */
+    margin-top: 20px;
+    margin-left: 10px;
+    min-width: margin;
+    /* padding-left: 10px; */
+    text-align: right;
+   
+}
+        
+.sidebar-status-icon{
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        position: relative;
+        top:35px;
+        border: solid black 2px;
+    
+}
+
+.sidebar-name-holder{
+
+padding-top: 24px;
+padding-left: 20px;
+/* background-color: hotpink; */
+width: 10em;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+font-size: 16px;
+text-align: left;
+
+ 
+}
+
+.time-sidebar{
+
+
+    position: relative;
+    width: 65px;
+    top: 8px;
+    right: 0;
+    overflow: hidden;
+    
+}
+
+.sidebar-text-contaner{
+    padding-top:auto;
+    padding-bottom: auto;
+}
+
+
+.sidebar-on-mouseout{
+    background-color: "transparent";
+}
+/* New IDs */
+
+#sidebar-searchform {
+    width: 80%;
+    height:100%;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    font-family: "montserrat", sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 300;
+    min-height: 50px;
+    min-width: 250px;
+}
+#sidebar-searchform:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 227px -12px rgba(85,85,85,1);
+    -moz-box-shadow: 2px 2px 227px -12px rgba(85,85,85,1);
+    box-shadow: 2px 2px 227px -12px rgba(85,85,85,1);
+} 
+
+input[readonly]::placeholder {
+    color: #767676;
+  }

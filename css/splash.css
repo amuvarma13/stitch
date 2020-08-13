@@ -1,0 +1,40 @@
+#loading-splash-screen {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#stitch_logo {
+    display: inline-block;
+    position: relative;
+  margin-top:13%;
+  height: 30%;
+ 
+  object-fit: fill;
+}
+
+#company_name {
+
+    margin-top: 20%;
+
+    font-size: 1.5em;
+    letter-spacing: 0.8em;
+    color:lightgrey;
+    font-weight: 900;
+}
+
+/* #stitch_logo_cover {
+    display: inline-block;
+    position: absolute;
+  margin-top:13%;
+  height: 30%;
+  width: 60%;
+ background-color: green;
+  object-fit: fill;
+  left: 10px;
+} */

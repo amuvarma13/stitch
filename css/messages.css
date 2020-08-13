@@ -1,0 +1,432 @@
+.message-container {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius:2px;
+    border-left: none;
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 30px;
+
+    cursor: pointer;
+
+   /* **** */
+
+   }
+   
+   .message-name-and-time{
+       display:flex;
+       padding-bottom:5px;
+       
+   }
+   
+   .message-holder {
+       position: relative;
+       text-align: left;
+       width: 80%;
+   }
+   .message-name-container{
+       font-weight: 500;
+       margin-right: 10px;
+       /* color: #4aa1eb; */
+       /* color: #ce3a5f; */
+   }
+   
+  
+   
+.file-size{
+    color:grey;
+    letter-spacing: 1px;
+}
+   
+
+  
+   
+   
+   
+   
+   .file-container{
+       height: 240px;
+       width: 100%;
+       background-color: #FAFAFA;
+       min-width: 350px;
+       padding-left: 80px;
+       border-radius: 5px;
+       margin-bottom: 20px;
+       margin: 10px;
+     
+   }
+   .file-inner-container{
+       height:200px;
+   
+       width: 320px;
+       background-color: #f1f1f1;
+       border-left: solid #777 5px;
+       border-radius: 5px;
+      
+   }
+   .file-spacer{
+       height: 20px;
+       width: 100%;
+   }
+   
+
+   
+   .file-second-row{
+       display:flex;
+   }
+   
+   .file-title{
+       padding: 5px;
+       color: #00C2FF;
+   }
+   .title-file{
+    color: #00C2FF;
+    text-decoration: none;
+   }
+   .file-message-container{
+       margin: 10px;
+   }
+   .file-second-row{
+       padding: 5px;
+   
+   }
+   
+   .bottom-row-file{
+       position: relative;
+       display:flex;
+       margin-left: 5px;
+       position:absolute;
+       bottom: 30px;
+       font-size: 0.8em;
+   }
+   
+   .img-type-icon {
+       padding-right: 5px;
+   }
+   .file-icon-save{
+       font-size: 2em;
+       position: absolute;
+       color:#777;
+   
+       position: absolute;
+       top: 150px;
+       left: 20px;
+       cursor: pointer;
+   
+   
+   }
+   .file-icon-unsave{
+       font-size: 2em;
+       position: absolute;
+       color:#777;
+      
+       position: absolute;
+       top: 150px;
+       left: 20px;
+       cursor: pointer;
+       display:none;
+      
+   }
+   .file-icon-download{
+       font-size: 2em;
+       position: absolute;
+       color:#777;
+      
+       position: absolute;
+       top: 50px;
+       left: 20px;
+       cursor: pointer;
+   
+   }
+
+   .stitch-container{
+       background-color: rgba(206,58,96,0.8);
+       box-shadow: 6px 3px 3px rgba(206,58,96,0.8);
+       width: 80%;
+   
+       padding: 10px;
+       margin: 20px;
+       color: black;
+       border-radius: 5px;
+       
+   }
+
+
+
+
+
+/* Pretty sure the only css needed for meetings */
+
+.meet-container{
+    display:flex;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px;
+
+
+
+}
+
+.meet-container:hover {
+    background-color: #F1F1F1;
+}
+
+.message-date-and-time{
+    
+    width: 70px;
+
+   
+  
+    text-align: left;
+    height: 100%;
+    
+   
+    overflow: hidden;
+    font-size: 0.6em;
+    
+}
+
+.meeting-main-body{
+    border-left: solid #FF6489 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.message-time-holder{
+    font-size: 0.7em;
+    padding-top:0.3em;
+    /* font-style: italic; */
+    visibility: hidden;
+    
+}
+
+
+/* Pretty sure the only css used for tasks */
+.task-container{
+    display:flex;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px;
+
+
+
+}
+.task-container:hover {
+    background-color: #F1F1F1;
+}
+
+.task-complete-marker{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: grey solid 0.5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: 5px;
+    background-color: #fafafa;
+    cursor: pointer;
+
+}
+
+.task-complete-or-not {
+    width: 60px;
+ 
+
+
+}
+
+.task-main-body{
+    border-left: solid #64C855 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+
+.meet-key-word {
+    color: #FF6489;
+    cursor:pointer;
+}
+
+.task-key-word{
+    color: #64C855;
+    cursor:pointer;
+
+}
+
+.editted-message{
+    font-style: italic;
+    font-size: 0.8em;
+    color: hotpink
+}
+
+.delete-message-icon {
+    position: absolute;
+    right: 25%;
+    font-size: 0.5em;
+    color: red;
+    visibility: hidden;
+}
+
+.iframe-previewer {
+    
+    
+    border: #f1f1f1; 
+    height: 1000%;
+    width: 115px;
+    margin-top: -60px;
+    margin-right: -50px;
+    border: none;
+
+}
+.iframe-holder{
+    background-color: white;
+    position: relative;
+    left: 130px;
+    top: 5px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100px;
+    height: 139px;
+
+}
+
+.share-frame{
+    height: 100%;
+    width: 100%;
+    border:none;
+}
+
+.point-container {
+   
+    z-index: 200;
+    margin: 20px;
+}
+.point-drop-indicator{
+    position: absolute;
+ display: block;
+ text-align: center;
+padding-top: 15px;;
+
+    background-color: lightgrey;
+    border-radius: 5px;
+    height:100%;
+    width:100%;
+    display: none;
+    opacity: 0.8;
+    color: grey;
+    font-size: 1.5em;
+  
+}
+.file-lister-point{
+   
+}
+.point-title-holder{
+    margin-top: 10px;
+
+  
+    
+}
+.indi-file-point{
+    display:flex;
+    padding:5px;
+}
+.indi-file-point:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.point-top-row{
+    display: flex;
+    padding: 20px;
+    background-color: lightgray;
+    cursor: pointer;
+
+}
+
+/*Poll */
+.poll-option{
+    border: solid red 2px;
+}
+
+.voteRow {
+    background-color: blue;
+    height: 30px;
+    
+}
+.vote-node-container{
+    display:flex;
+}
+
+.poll-choose-option-circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: solid grey 2px;
+
+}
+.option-poll-top-row{
+    display: flex;
+}
+
+.announcement-title{
+    font-size: 2em;
+    background-color: #e5e5e5;
+    padding: 5px;
+
+
+}
+.announce-container{
+    margin: 10px;
+
+    border-radius: 5px;
+    border-top: solid hotpink 5px;
+
+
+}
+
+.second-row-announce{
+    background-color:#fafafa;
+    color: grey;
+    padding: 20px;
+}
+
+
+.share-container{
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border-left: 5px rgb(83, 83, 231) solid;
+    max-height: 40px;
+    min-height: 40px;
+    overflow: scroll;
+    margin: 10px;
+    padding: 5px;
+    min-width: 500px;
+    max-width: 500px;
+
+    display: flex;
+
+
+}
+.share-invite{
+    color:grey;
+    font-size: 0.9em;
+
+}
+
+.share-data-cont{
+    font-size: 0.7em;
+}
+
+.share-main-body{
+    width: 600px;
+}
+
+.share-expand-icon{
+    color: rgb(83, 83, 231);
+    margin-left: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}

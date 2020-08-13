@@ -1,0 +1,23 @@
+#caleandar {
+    /* display:none */
+    position: absolute;
+    background-color: white;
+    z-index: 13;
+    left: 0;
+    top: 5vh;
+    height:100%;
+    width: 100%;
+}
+
+#caleander-holder{
+    display: none;
+    height: 150vh;
+}
+
+#close-caleander {
+    height: 5vh;
+    text-align: right;
+    background-color: white;
+    padding: 20px;
+    z-index: 140;
+}

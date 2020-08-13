@@ -1,0 +1,17 @@
+#add-member-container {
+    position:absolute;
+    background-color: white;
+    left: 10px;
+    flex-direction: column;
+    display: flex;
+    left: 45%;
+    top:40%;
+    background-color: blue;
+    padding: 5%;
+
+}
+
+#new-member-id {
+
+}
+
